@@ -1,0 +1,606 @@
+						1. Introduction to Python Programing
+
+Topics:
+
+	History
+	Why Python
+	Where to use Python?
+
+Overview:
+
+Computer is an Electronic device or Programming Device and it is also know as computational device.
+
+These Computers are not self operated devices they need to get instructions from
+someone. That someone who gives instructions to the computer is know is Programmer or Developer.
+
+These group of instrctions is called as Program. To write this program we need a language
+and those languages are called as Programming Language.
+
+There are many Programming Languages. We are going to study about Python
+
+1. Python Programming Language is a General purpose Language. We can use this language to develop
+   different kinds of Softwares.
+
+
+History of Python Programming Language:
+
+1. This Python Programming Language was invented by Guido van Rossum in Early 1990's
+   and the name python came from Monty python's flying circus
+
+2. In Python there are different versions 
+		version 	release date
+
+		 1.0 		1994 Jan
+		 2.0 		2000 Oct
+		 3.0 		2008 Dec
+
+Python 3 is the new version
+
+Why Python ?
+
+* Beginner Friendly
+
+* Easy to Understand (Syntax is easy)
+
+* Portable and Supportable
+
+	Where we can use Python Programming Language:
+
+1. back end web development
+
+2. data analysis
+
+3. AI and Scientific computing
+
+4. Games desktop apps, 3D graphics
+
+5. GUIs
+
+
+						2. Downloading and Installing Python idle
+
+
+To download python 
+
+1. Open the browser
+
+2. type www.python.org
+
+3. Go for the latest version of python
+
+4. click on it 
+
+5. There will be different files and select the file based
+   on your system configaration.
+
+6. Now go downloads and double click on the file 
+	
+7. A dialog box appers click on Add Python 3.5 to Path
+
+8. Click on install now and wait for sometime
+
+9. Close it
+
+10. To check whether python working or not  go to start
+    search for python idle and use it to run your programs
+    if you get error please check the installation process
+
+
+
+    						3. HOW TO RUN PYTHON PROGRAMS
+
+
+There are 3 ways to Run Programs
+
+1. Python Command Line
+
+2. Microsoft Command Prompt
+
+3. Python IDLE
+
+
+
+1.Python Command Line:
+
+		click on start and search for python idle
+
+		now the python command line opens in interactive mode with 3 greater than symbols >>>
+
+		type your command and get instant output by pressing enter.
+
+
+2.Microsoft Command Prompt
+
+		Open command prompt and type python
+
+		Now you can use it like Interactive mode similar to python command line
+
+
+3. Python Idle
+
+		In this method we create a python file and save the file with .py extension
+
+		and run it when ever we needed
+
+		To run the file use run tab.
+
+		It is also known as script mode.
+
+
+Note:
+		To exit the Python command line use exit() function
+
+
+
+							4. Fundamentals Concepts of Python Programming
+
+
+Values are the basic things any in Programming Language
+
+Example: Integers (10,20,3666), Float (4.5,8.99), String ("Hello")
+
+Variables:
+
+		Variables are names given to certain value or information
+
+		Example:	Var=39
+					X=4.6
+					Name="amul"
+
+		To create a variable and name a variable we use Assignment Operator
+
+
+		Left side=> Variable name 	Right side => Value
+
+	Why the name Variable
+
+		The value of the variable can change
+
+		X=10
+					x=10
+
+		X=X+1
+
+
+		X=11
+					x=11
+
+	Why Variables??
+
+		If we want to use large value in program again again then we can varibles
+		to avoid errors
+
+		Variables are also called as name given to the Memory Location.
+
+		If we use variable then we can find the location of the value
+
+
+How to create a Variable
+
+1.) first letter of the variable should be letter or underscore but not number
+
+Example:		var_1=10
+				print(var_1)	#10
+
+2.) In Python a Variable can hold any value
+
+Example:	
+				var_1=10
+				print(var_1)	#10
+				var_1=4.5
+				print(var_1)	#4.5
+				var_1="amul"
+				print(var_1)	#amul
+
+		In Python no need to mention the type of the value.
+
+Python can hold any kind of value.
+
+3.) Variable name must not start with number.
+
+	
+Literals:
+	
+	Literals are one or more characters which stand for itself and don't change.
+
+	There are two types of Literals
+
+			Numeric Literals	Ex: -4, 5, 32
+
+			String Literals	Ex: "string literal"
+
+
+Format:
+
+	format is one of the fundamental concept of literal.
+
+	By using it we alter format of numeric and string literals.
+
+format(value,specifier)
+
+	value indicates literal
+	specifier indicates how to alter (specifier in single quote or double quote)
+
+Ex:-
+
+8/9
+
+0.8888888888888888888888888888888
+
+If we want 3 decimal points after division then we use format()
+
+format(8/9,".3f")
+
+In String Literals formats are used for justification left justification or right justification
+
+format("Hello","<40")	# Left justification
+
+'hello                                                 '
+
+format("Hello",">40")	# Right Justification
+
+'                                                 hello'
+
+format("Hello","^40")	# Center Justification
+
+'									Hello								'
+
+
+						
+
+			Fundamentals Concepts
+
+Identifiers
+
+Keywords
+
+Control characters
+
+Implicit and Explicit line joining
+
+
+
+1. Identifiers
+
+		Identifiers are the names used in the program like variable name,
+		method name, class name,etc.
+
+		Identifier can contain letter, digit and underscore
+
+		The first letter of the identifier must start with letter or underscore
+
+		It should not start with digit and it must not contain special symbol
+
+Example:
+			
+				var_1=90
+
+				_var1=80
+
+				4var=32	# SyntaxError
+
+				var#=4 	#	Error 	(Special characters are excluded in identifier)
+
+
+2. Keywords
+
+		Keywords are predefined words in a Programming Language
+		that has a specific meaning and it cannot be used as
+		Identifiers
+
+		To know more about keywords use help('keyword') method.
+
+
+3. Control Characters:
+
+		Control Characters are used to control the output.
+
+Example:
+					print("Hello \n Welcome to amula academy")
+
+				Output:
+						Hello
+						 Welcome to amula academy
+
+
+4. Implicit and Explicit line joining method
+
+		When we try to divide input into different physical lines then 
+		compiler will provide error.
+
+	Example:
+				print("Hello
+										#	Error
+
+		It is can be overcomed by using implicit and explicit line joing method.
+
+		The rule of line joining method is that the number of opening quotes
+		equal to the number of closing quotes
+
+		Example:	print("Hello"
+					"Welcome to Amulya Academy")
+
+			Output:
+					HelloWelcome to Amulya Academy
+
+			Explicit line joining method:
+
+					Here before entering enter we use \ backward slash
+
+			Example:	print("Hello\
+			Welcome to Amulyas Academy")
+
+			Output:	HelloWelcome to Amulyas Academy
+
+
+							5. Operators
+
+
+Operators are the symbols that are used for computation.
+
+Ex:		+,-,*,/,etc
+
+2+3 here 2,3 are called as operands and + is called as operator
+
+
+Based on Operands:
+	
+			Unary Operator 	(If single operator is present then it is called as unary operator)
+			Example: -4,+5
+			Binary Operator 	(It contains two operators)
+			Example: 3+4
+
+
+Based on Operator:
+
+			Arithmetic Operator
+			Relational Operator 	
+			Membership operator
+			Boolean operator
+
+		Here Relational Operator, Membership operator, Boolean operator are also
+		called as Boolean Expression
+
+Arithmetic Operators: (8 Arithmetic Operators in Python)
+
+1. Negation
+2. Addition
+3. Subtraction
+4. Multiplication
+5. Division
+6. Truncation div
+7. Modulus
+8. Exponential
+
+
+Negation:
+
+			Negation is an unary operator which is used to negate the value
+
+			Example: -5
+
+			Output: -5
+
+Addition:
+		
+			Addition is used for adding two or more operands
+
+			Example: 5+3
+
+			Ouput: 8
+
+Subtraction:
+		
+			Subtraction is used to subtract two or more operands
+
+			Example: 5-3
+
+			Ouput: 2
+
+Multiplication:
+
+			Multiplicaton is used to multiply two or more operands
+
+			Example: 5*3
+
+			Output: 15
+
+Division:
+
+			Division is used to divide two operands
+
+			Example: 25/5
+
+					Output: 5
+
+Tuncation div:
+
+			It truncats the result to an integer 
+
+			Example: 5/4 	== 1.25
+
+						5//4 	== 1
+
+Modulus:
+
+			It gives the remainder when the division is performed
+
+			Example: 5%4 = 1
+
+
+Exponential:
+
+			If we want to find exponent value of a value then we use exponential operator
+
+			Example: 2**3 		
+
+			Output:	8
+
+
+Relational Operators:
+
+There are 6 Relational Operators in Python Programming Language
+
+1. Equal (==)
+
+2. Not Equal (!=)
+
+3. Less than (<)
+
+4. Greater than (>)
+
+5. Less than or equal to (<=)
+
+6. Greater than or equal to (>=)
+
+
+Equal and not equal to are used to check whether two elements are equal or not
+
+Example: 5==5 	# True
+			5!=4 	# True
+
+less than symbol is used to check the left side number is less than the right side number
+
+Example: 5<6 	#True
+
+greater than symbol is used to check the left side number is greater than the right side
+number
+
+Example: 5>6 	# False
+
+less than or equal to is used to check the left side number is less than or equal to right side number
+
+Example: 5<=6 	# True
+
+greater than or equal to is used to check the left side number is greater than or equal to right side number
+
+Example: 5>=6 	# False
+
+
+
+MemberShip Operators:
+
+There are two membership operators in python
+
+These Membership Operators are used to check whether the given element is member of
+group of element or not.
+
+
+1.in
+2.not in
+
+Example:
+		
+				5 in [1,2,3,4,5]
+
+				Output: True
+
+				3 not in [1,2,3,4,5]
+
+				Output: False
+
+
+Boolean Operators:
+
+There are 3 Boolean Operators in Python Programming Language
+
+1. and
+2. or
+3. not
+
+
+Example:
+			5<6 and 4==4 	# if case of and if both the conditions are true then it will 
+								# give true else false (True)
+
+			5>6 and 4==4 	# False
+
+Because of this property and is also called as short circuit evaluation or lazy evalution.
+
+or Example:
+		If any condition is true then the answer is true
+
+		5<6 or 5==5 	# True
+
+		6>7 or 6==6 	# True
+
+		 W      R
+
+It is also called as lazy evaluation or lazy evaluation.
+
+not Example:
+
+	not is used to reverse the answer
+
+		not(10>5) 	# False
+
+
+							Precedence and Associativity 
+
+
+Suppose take an expression 	2+5*4
+
+ouput: 22
+
+While evaluating an expression that contains more than one operator we need to
+follow priority
+
+Some Operator has highest priority than the others
+
+In the above case * multiplication has more priority than +
+
+2+5*4  =2+20 = 22
+
+This rule of priority is known as precedence
+
+Precedence is used while evaluating an expression than contains multiple operators
+
+
+Precedence Priority High to low chart
+
+1. ()
+
+2. **
+
+3. unary opertor
+
+4. *,/,//,%
+
+5. +,-
+
+6. <<,>>
+
+7. &
+
+8. ^
+
+9. |
+
+10. relational and membership operator
+
+11. not
+
+12. and
+
+13. or
+
+
+Associativity:
+
+		If an expression contains operators of same precedence then we associativity 
+		to solve the expression
+
+
+		Example:
+						2+5-1 (2+4)=(6)
+
+
+There are two types of Associativity Operations
+
+Left to Right Operation
+
+Right to Left Operation
+
+Almost all operators follow Left to right Associativity.
+
+
